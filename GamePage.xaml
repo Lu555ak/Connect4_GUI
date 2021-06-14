@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="Connect4___GUI.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Connect4___GUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Height="1080" VerticalAlignment="Top" HorizontalAlignment="Center" Width="1920">
+        <Image x:Name="red_color" HorizontalAlignment="Left" Height="100" Margin="-319,-1352,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_red.png"/>
+        <Image x:Name="yellow_color" HorizontalAlignment="Left" Height="100" Margin="-419,-1352,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_yellow.png"/>
+        <Image x:Name="empty_color" HorizontalAlignment="Left" Height="100" Margin="-524,-1352,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Image  x:Name="gb00" HorizontalAlignment="Left" Height="100" Margin="591,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb01" HorizontalAlignment="Left" Height="100" Margin="691,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb02" HorizontalAlignment="Left" Height="100" Margin="791,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb03" HorizontalAlignment="Left" Height="100" Margin="891,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb04" HorizontalAlignment="Left" Height="100" Margin="991,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb05" HorizontalAlignment="Left" Height="100" Margin="1091,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb06" HorizontalAlignment="Left" Height="100" Margin="1191,260,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Image  x:Name="gb10" HorizontalAlignment="Left" Height="100" Margin="591,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb11" HorizontalAlignment="Left" Height="100" Margin="691,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb12" HorizontalAlignment="Left" Height="100" Margin="791,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb13" HorizontalAlignment="Left" Height="100" Margin="891,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb14" HorizontalAlignment="Left" Height="100" Margin="991,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb15" HorizontalAlignment="Left" Height="100" Margin="1091,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb16" HorizontalAlignment="Left" Height="100" Margin="1191,360,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Image  x:Name="gb20" HorizontalAlignment="Left" Height="100" Margin="591,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb21" HorizontalAlignment="Left" Height="100" Margin="691,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb22" HorizontalAlignment="Left" Height="100" Margin="791,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb23" HorizontalAlignment="Left" Height="100" Margin="891,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb24" HorizontalAlignment="Left" Height="100" Margin="991,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb25" HorizontalAlignment="Left" Height="100" Margin="1091,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb26" HorizontalAlignment="Left" Height="100" Margin="1191,460,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Image  x:Name="gb30" HorizontalAlignment="Left" Height="100" Margin="591,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb31" HorizontalAlignment="Left" Height="100" Margin="691,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb32" HorizontalAlignment="Left" Height="100" Margin="791,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb33" HorizontalAlignment="Left" Height="100" Margin="891,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb34" HorizontalAlignment="Left" Height="100" Margin="991,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb35" HorizontalAlignment="Left" Height="100" Margin="1091,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb36" HorizontalAlignment="Left" Height="100" Margin="1191,560,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Image  x:Name="gb40" HorizontalAlignment="Left" Height="100" Margin="591,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb41" HorizontalAlignment="Left" Height="100" Margin="691,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb42" HorizontalAlignment="Left" Height="100" Margin="791,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb43" HorizontalAlignment="Left" Height="100" Margin="891,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb44" HorizontalAlignment="Left" Height="100" Margin="991,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb45" HorizontalAlignment="Left" Height="100" Margin="1091,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb46" HorizontalAlignment="Left" Height="100" Margin="1191,660,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Image  x:Name="gb50" HorizontalAlignment="Left" Height="100" Margin="591,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb51" HorizontalAlignment="Left" Height="100" Margin="691,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb52" HorizontalAlignment="Left" Height="100" Margin="791,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb53" HorizontalAlignment="Left" Height="100" Margin="891,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb54" HorizontalAlignment="Left" Height="100" Margin="991,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb55" HorizontalAlignment="Left" Height="100" Margin="1091,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image  x:Name="gb56" HorizontalAlignment="Left" Height="100" Margin="1191,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+
+        <Button x:Name="column0_button" Height="50" Width="100" Margin="591,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column0_button_Click" Loaded="game_loaded">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <Button x:Name="column1_button" Height="50" Width="100" Margin="691,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column1_button_Click">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <Button x:Name="column2_button" Height="50" Width="100" Margin="791,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column2_button_Click">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <Button x:Name="column3_button" Height="50" Width="100" Margin="891,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column3_button_Click">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <Button x:Name="column4_button" Height="50" Width="100" Margin="991,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column4_button_Click">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <Button x:Name="column5_button" Height="50" Width="100" Margin="1091,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column5_button_Click">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <Button x:Name="column6_button" Height="50" Width="100" Margin="1191,192,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Click="column6_button_Click">
+            <Image HorizontalAlignment="Right" Margin="0,3,0,0" Width="69" Source="/Assets/Arrow_down.png"/>
+        </Button>
+        <TextBlock x:Name="display" HorizontalAlignment="Left" Margin="591,40,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50" Height="69" Width="695" TextAlignment="Center" FontFamily="Bahnschrift"/>
+        <Image  x:Name="turn_display" HorizontalAlignment="Left" Height="100" Margin="330,0,0,120" VerticalAlignment="Bottom" Width="100" Source="/Assets/player_empty.png"/>
+        <TextBlock x:Name="player_display" HorizontalAlignment="Left" Margin="330,810,0,0" Text="PLAYER 1" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="172" FontSize="25" FontWeight="Normal"/>
+        <Image x:Name="blue_color" HorizontalAlignment="Left" Height="100" Margin="-205,-1352,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_blue.png"/>
+        <Image x:Name="purple_color" HorizontalAlignment="Left" Height="100" Margin="-183,-1247,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_purple.png"/>
+        <Image x:Name="pink_color" HorizontalAlignment="Left" Height="100" Margin="-301,-1247,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_pink.png"/>
+        <Image x:Name="green_color" HorizontalAlignment="Left" Height="100" Margin="-419,-1247,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_green.png"/>
+        <Image x:Name="brown_color" HorizontalAlignment="Left" Height="100" Margin="-36,-1352,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_brown.png"/>
+        <Image x:Name="orange_color" HorizontalAlignment="Left" Height="100" Margin="-6,-1237,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_orange.png"/>
+        <Image x:Name="player1_c" HorizontalAlignment="Left" Height="100" Margin="-601,-1056,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+        <Image x:Name="player2_c" HorizontalAlignment="Left" Height="100" Margin="-457,-1047,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/player_empty.png"/>
+    </Grid>
+</Page>

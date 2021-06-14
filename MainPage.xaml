@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Connect4___GUI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Connect4___GUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="play_button" Content="PLAY" Margin="336,257,0,0" VerticalAlignment="Top" Height="150" Width="600" FontSize="80" FontFamily="Doppio One" Click="play_button_Click"/>
+        <Button x:Name="leaderboard_button" Content="LEADERBOARD" Margin="336,435,0,0" Height="150" Width="600" FontSize="80" FontFamily="Doppio One" Click="leaderboard_button_Click" VerticalAlignment="Top"/>
+        <Button x:Name="quit_button" Content="QUIT" Margin="336,612,0,0" VerticalAlignment="Top" Height="150" Width="600" FontSize="80" FontFamily="Doppio One" Click="quit_button_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="1148,225,0,0" Text="PLAYER CONTROL" TextWrapping="Wrap" VerticalAlignment="Top" Height="69" Width="414" FontFamily="Doppio One" FontSize="50"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="1218,316,0,0" VerticalAlignment="Top" Height="30" Width="250" Text="USERNAME:" FontSize="20" FontFamily="Arial Narrow" FontWeight="Normal"/>
+        <TextBox x:Name="username_text" HorizontalAlignment="Left" Margin="1218,341,0,0" VerticalAlignment="Top" Height="50" Width="250" Background="#FFCCCCCC" FontSize="20" FontFamily="Segoe UI Light"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1218,444,0,0" VerticalAlignment="Top" Height="30" Width="250" FontSize="20" FontFamily="Segoe UI Semilight" FontWeight="Normal" Text="PASSWORD:&#xD;&#xA;" />
+        <PasswordBox x:Name="password_text" HorizontalAlignment="Left" Margin="1218,469,0,0" VerticalAlignment="Top" Height="50" Width="250" Background="#FFCCCCCC" FontSize="20" FontFamily="Segoe UI Light"/>
+
+        <Button x:Name="addplayer_button" Content="ADD" Margin="1262,641,0,0" VerticalAlignment="Top" Height="100" Width="165" FontFamily="Arial Narrow" FontSize="35" Click="addplayer_button_Click"/>
+        <Button x:Name="deletplayer_button" Content="RESET ALL PLAYERS" Margin="1262,755,0,0" VerticalAlignment="Top" Height="32" Width="165" FontFamily="Arial Narrow" FontSize="14" Click="deleteplayer_button_Click"/>
+        <TextBlock x:Name="error_text" HorizontalAlignment="Left" Margin="1262,612,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Calibri" FocusVisualPrimaryBrush="#FFEE0303" Width="354"/>
+    </Grid>
+</Page>

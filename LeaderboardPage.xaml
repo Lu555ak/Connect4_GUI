@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="Connect4___GUI.LeaderboardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Connect4___GUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid FocusVisualSecondaryBrush="#99FFFFFF">
+        <Button x:Name="back_button" Content="BACK" Margin="268,832,0,0" VerticalAlignment="Top" Height="79" Width="296" FontSize="30" Click="back_button_Click"/>
+        <ListView x:Name="PlayerScores" Loaded="PageLoad" Margin="88,157,703,283">
+
+            <StackPanel>
+                <Border Background="#FFD700">
+                    <TextBlock x:Name="r1n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                </Border>
+                <TextBlock x:Name="r1s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <Border Background="#C0C0C0">
+                    <TextBlock x:Name="r2n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                </Border>
+                <TextBlock x:Name="r2s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <Border Background="#CD7F32">
+                    <TextBlock x:Name="r3n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                </Border>
+                <TextBlock x:Name="r3s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r4n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r4s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r5n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r5s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r6n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r6s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r7n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r7s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r8n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r8s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r9n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r9s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="r10n" Margin="20,0,20,8" FontSize="24" FontStyle="Italic" FontWeight="SemiBold" Foreground="Black" />
+                <TextBlock x:Name="r10s" Margin="20,0,20,8" FontSize="16" Foreground="DarkGray" Opacity="0.8" />
+            </StackPanel>
+
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="1313,325,0,0" Text="PLAYER FINDER" TextWrapping="Wrap" VerticalAlignment="Top" Height="69" Width="414" FontFamily="Doppio One" FontSize="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1313,416,0,0" VerticalAlignment="Top" Height="30" Width="250" Text="USERNAME:" FontSize="20" FontFamily="Arial Narrow" FontWeight="Normal"/>
+        <TextBox x:Name="username_text" HorizontalAlignment="Left" Margin="1313,441,0,0" VerticalAlignment="Top" Height="50" Width="250" Background="#FFCCCCCC" FontSize="20" FontFamily="Segoe UI Light" TextChanged="playersearch"/>
+        <Button x:Name="findplayer_button" Content="FIND" Margin="1598,441,0,0" VerticalAlignment="Top" Height="50" Width="165" FontFamily="Arial Narrow" FontSize="35" Click="findplayer_button_Click"/>
+        <TextBlock x:Name="rss" HorizontalAlignment="Left" Margin="1313,540,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="81" Width="311" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="88,56,0,0" Text="TOP 10 PLAYERS" TextWrapping="Wrap" VerticalAlignment="Top" Height="69" Width="414" FontFamily="Doppio One" FontSize="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1751,975,0,0" Text="By Lxoy &amp; Lu555ak" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" FontSize="9"/>
+    </Grid>
+</Page>
